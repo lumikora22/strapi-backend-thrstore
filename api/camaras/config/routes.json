@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/camaras",
+      "handler": "camaras.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/camaras/count",
+      "handler": "camaras.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/camaras/:id",
+      "handler": "camaras.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/camaras",
+      "handler": "camaras.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/camaras/:id",
+      "handler": "camaras.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/camaras/:id",
+      "handler": "camaras.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
