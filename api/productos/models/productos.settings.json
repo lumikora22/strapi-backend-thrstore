@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "camaras",
+  "collectionName": "productos",
   "info": {
-    "name": "camaras"
+    "name": "productos",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,17 +20,20 @@
       "model": "platform"
     },
     "price": {
-      "type": "decimal",
-      "required": true
+      "required": true,
+      "type": "decimal"
     },
     "discount": {
-      "type": "integer"
+      "type": "decimal",
+      "required": true
     },
     "poster": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "files",
+        "images",
+        "videos"
       ],
       "plugin": "upload",
       "required": true,
@@ -41,25 +45,27 @@
       "required": true
     },
     "summary": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "video": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "screenshots": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "files",
+        "images",
+        "videos"
       ],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
     },
     "releaseDate": {
-      "type": "date",
-      "required": true
+      "type": "date"
     }
   }
 }

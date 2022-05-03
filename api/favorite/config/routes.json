@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/camaras",
-      "handler": "camaras.find",
+      "path": "/favorites",
+      "handler": "favorite.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/camaras/count",
-      "handler": "camaras.count",
+      "path": "/favorites/count",
+      "handler": "favorite.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/camaras/:id",
-      "handler": "camaras.findOne",
+      "path": "/favorites/:id",
+      "handler": "favorite.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/camaras",
-      "handler": "camaras.create",
+      "path": "/favorites",
+      "handler": "favorite.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/camaras/:id",
-      "handler": "camaras.update",
+      "path": "/favorites/:id",
+      "handler": "favorite.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/camaras/:id",
-      "handler": "camaras.delete",
+      "path": "/favorites/:id",
+      "handler": "favorite.delete",
       "config": {
         "policies": []
       }
