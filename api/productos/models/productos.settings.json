@@ -66,6 +66,10 @@
     },
     "releaseDate": {
       "type": "date"
+    },
+    "existencias": {
+      "type": "integer",
+      "required": true
     }
   }
 }
